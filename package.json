@@ -1,7 +1,7 @@
 {
-  "name": "@mikezimm/sample-library",
+  "name": "@mikezimm/npm-react",
   "version": "1.0.0",
-  "description": "Sample Library",
+  "description": "Library of reusable react components",
   "license": "UNLICENSED",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -44,6 +44,9 @@
   "dependencies": {
     "lodash-es": "^4.17.21",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+
+    // Added because components do use some fabric components
+    "office-ui-fabric-react": "^7.199.1"
   }
 }
