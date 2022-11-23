@@ -47,6 +47,7 @@
     "react-dom": "16.13.1",
 
     // Added because components do use some fabric components
-    "office-ui-fabric-react": "^7.199.1"
+    "office-ui-fabric-react": "^7.199.1",
+    "@microsoft/sp-property-pane": "1.15.2"
   }
 }
