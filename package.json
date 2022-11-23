@@ -1,7 +1,7 @@
 {
-  "name": "@mikezimm/sample-library",
+  "name": "@mikezimm/fps-react",
   "version": "1.0.0",
-  "description": "Sample Library",
+  "description": "Library of reusable react components",
   "license": "UNLICENSED",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -35,15 +35,15 @@
     "webpack": "^5.74.0",
     "webpack-bundle-analyzer": "^4.6.1",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.0",
-    "@types/lodash-es": "^4.17.21"
+    "webpack-dev-server": "^4.11.0"
   },
   "files": [
     "/lib"
   ],
   "dependencies": {
-    "lodash-es": "^4.17.21",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "office-ui-fabric-react": "^7.199.1",
+    "@microsoft/sp-property-pane": "1.15.2"
   }
 }
