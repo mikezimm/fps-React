@@ -1,3 +1,10 @@
+# Publish hints:
+
+npm run clean
+npm run build
+npm version major/minor/patch
+npm publish --access=public
+
 # Changelog
 
 ## 1.0.0 - 2202-Nov-22
