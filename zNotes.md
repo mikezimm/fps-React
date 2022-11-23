@@ -9,3 +9,12 @@ change mode to production when pushing final version to minimize library and cre
 
 module.exports = {
   mode: 'development', // switch to production when you package for production - impacts final size of package you import
+
+
+<!-- Time:  24:14 in /DevLearning/Training/Mentoring SPFx - Build npm package from ground up-20221114_140149-Meeting Recording   -->
+
+For this library, things to NOT bundle here:
+externals: { // Read webpack documentation - do not want to bundle these into the package
+  "react": "React",
+  "lodash-es": "lodash-es/*"
+},
