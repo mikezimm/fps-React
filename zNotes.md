@@ -18,3 +18,13 @@ externals: { // Read webpack documentation - do not want to bundle these into th
   "react": "React",
   "lodash-es": "lodash-es/*"
 },
+
+## While developing the library only
+Refer to it with the file:.. reference.
+When the library works, then the consumer should pull from the npm library
+
+  "dependencies": {
+    // Use file reference for local copies
+    // 
+    // "@mikezimm/sample-library": "^1.0.0",
+    "@mikezimm/sample-library": "file:../trainingSample",
