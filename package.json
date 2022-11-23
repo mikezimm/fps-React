@@ -2,7 +2,6 @@
   "name": "@mikezimm/fps-react",
   "version": "1.0.0",
   "description": "Library of reusable react components",
-  "license": "UNLICENSED",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "engines": {
@@ -16,6 +15,20 @@
     "clean": "del-cli \"./?(dist|lib)\"",
     "lint": "eslint ./src --ext .ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikezimm/fps-React.git"
+  },
+  "keywords": [
+    "SPFx",
+    "functions"
+  ],
+  "author": "Mike Zimmerman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikezimm/fps-React/issues"
+  },
+  "homepage": "https://github.com/mikezimm/fps-React#readme",
   "browserslist": [
     "last 1 version",
     "> 1%",
