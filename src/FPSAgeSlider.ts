@@ -6,7 +6,7 @@ import { changesAgeSlider, FPSAgeSliderOptions, FPSAgeSliderOptionsOOTB, FPSAgeS
 //Interfaces
 import type { IFPSAgeSliderWPProps, IFPSAgeSliderProps, IFPSAgeSliderItem } from "./components/atoms/FPSAgeSlider/FPSAgeTypes";
 //PropPaneGroup
-import{ buildAgeSliderGroup } from './components/atoms/FPSAgeSlider/FPSAgePropPaneGroup';
+import { buildAgeSliderGroup } from './components/atoms/FPSAgeSlider/FPSAgePropPaneGroup';
 
 
 export default FPSAgeSliderHook;
