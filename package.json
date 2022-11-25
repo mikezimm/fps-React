@@ -24,7 +24,7 @@
     "functions"
   ],
   "author": "Mike Zimmerman",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mikezimm/fps-React/issues"
   },
