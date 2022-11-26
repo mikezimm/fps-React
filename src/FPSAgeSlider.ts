@@ -8,7 +8,6 @@ import type { IFPSAgeSliderWPProps, IFPSAgeSliderProps, IFPSAgeSliderItem } from
 //PropPaneGroup
 import { buildAgeSliderGroup } from './components/atoms/FPSAgeSlider/FPSAgePropPaneGroup';
 
-
 export default FPSAgeSliderHook;
 
 export { IFPSAgeSliderHookProps, 

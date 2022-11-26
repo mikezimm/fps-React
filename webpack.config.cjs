@@ -9,7 +9,7 @@ module.exports = {
   mode: 'development', // switch to production when you package for production - impacts final size of package you import
   target: 'web',
   entry: {
-    npmReactComponents: path.resolve(__dirname, 'src/index.ts')  // npmReactComponents is the name of the library - external cdn reference name:  myServices.js
+    fpsReactComponents: path.resolve(__dirname, 'src/index.ts')  // npmReactComponents is the name of the library - external cdn reference name:  myServices.js
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
