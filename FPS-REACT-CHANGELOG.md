@@ -5,9 +5,30 @@ npm run build
 npm version major/minor/patch
 npm publish --access=public
 
-npm install @mikezimm/fps-react@1.0.0
+npm install @mikezimm/fps-react@1.0.1
 
 # Changelog
+
+## 1.0.1 - 2202-Nov-27
+- import npmFunctions/src\Services\Strings_\formating.tsx and src\Services\Strings_\xmlStrings.ts
+    added to:
+
+## 1.0.0 - 2202-Nov-22
+
+### COMMON
+
+- added banner/interfaces/Audiences from npmFunctions\src\Services\PropPane\Audiences_.ts
+- added banner/proppane/Audiences from npmFunctions\src\Services\PropPane\Audiences_.ts
+
+### ATOMS
+
+- EasyIcons - New component for creating icons based on keywords in objects
+
+### MOLECULES
+
+- EasyPages - New component for displaying site pages in the banner.
+- WebPartHistory - New code all about WebPartHistory component/logic.
+
 
 ## 1.0.0 - 2202-Nov-22
 
