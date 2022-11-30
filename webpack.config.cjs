@@ -5,6 +5,11 @@ const fs = require('fs');
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveAppPath = relativePath => path.resolve(appDirectory, relativePath);
 
+//Added per https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
+// const isDevelopment = process.env.NODE_ENV === 'development';
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+
 module.exports = {
   mode: 'development', // switch to production when you package for production - impacts final size of package you import
   target: 'web',
@@ -64,5 +69,55 @@ module.exports = {
       directory: resolveAppPath('app'),
       publicPath: '/',
     },
+  },
+  plugins: [
+    ///...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
+    // new MiniCssExtractPlugin({
+    //   filename: isDevelopment ? '[name].css' : '[name].[hash].css',
+    //   chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
+    // })
+  ],
+  module: {
+    rules: [
+      ///...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
+      // {
+      //   test: /\.module\.s(a|c)ss$/,
+      //   loader: [
+      //     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+      //     {
+      //       loader: 'css-loader',
+      //       options: {
+      //         modules: true,
+      //         sourceMap: isDevelopment
+      //       }
+      //     },
+      //     {
+      //       loader: 'sass-loader',
+      //       options: {
+      //         sourceMap: isDevelopment
+      //       }
+      //     }
+      //   ]
+      // },
+      // {
+      //   test: /\.s(a|c)ss$/,
+      //   exclude: /\.module.(s(a|c)ss)$/,
+      //   loader: [
+      //     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+      //     'css-loader',
+      //     {
+      //       loader: 'sass-loader',
+      //       options: {
+      //         sourceMap: isDevelopment
+      //       }
+      //     }
+      //   ]
+      // }
+      ///...
+    ]
+  },
+  resolve: {
+    // extensions: ['.js', '.jsx'],
+    // extensions: ['.js', '.jsx', '.scss']
   }
 };

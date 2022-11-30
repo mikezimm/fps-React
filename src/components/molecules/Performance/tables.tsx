@@ -4,7 +4,10 @@ import * as React from 'react';
 
 import { IPerformanceOp, ILoadPerformance, ILoadPerformanceOps, LoadPerformanceOps, IMinPerformanceSetting } from './IPerformance';
 
-// require('./styles.css');
+// require('./styles.css'); //Does not work
+// window.require('./styles.css');  //Does not work
+
+// import styles from './PERFORMANCE - RENAME TO JUST styles copy.scss'; //Does not work when following guide
 
 export function createPerformanceRows( performance: ILoadPerformance, keysToShow: ILoadPerformanceOps[] ) { //[ 'fetch', 'analyze' ]
 
