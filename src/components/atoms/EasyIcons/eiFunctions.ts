@@ -1,7 +1,7 @@
 
 import { EasyIconLocation, EasyIconObjectDefault, IEasyIcons, IEasyIconsWPProps } from './eiTypes';
 
-import { getStringArrayFromString } from '@mikezimm/fps-js/lib/indexes/StringsIndex';
+import { getStringArrayFromString } from '@mikezimm/fps-js/lib/logic/Strings/stringServices';
 
 export function setEasyIconsObjectProps( easyIconWPProps: IEasyIconsWPProps, ): IEasyIcons {
 
