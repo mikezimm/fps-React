@@ -41,8 +41,13 @@
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
+    "css-loader": "^6.7.2",
     "del-cli": "^5.0.0",
     "eslint": "^8.23.0",
+    "mini-css-extract-plugin": "^2.7.1",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.74.0",
@@ -54,7 +59,7 @@
     "/lib"
   ],
   "dependencies": {
-    "@microsoft/sp-property-pane": "1.15.2",
+    "@microsoft/sp-property-pane": "^1.15.2",
     "@mikezimm/fps-js": "^1.0.11",
     "@mikezimm/fps-pnp2": "^1.0.1",
     "office-ui-fabric-react": "^7.199.1",
