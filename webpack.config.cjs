@@ -70,54 +70,54 @@ module.exports = {
       publicPath: '/',
     },
   },
-  plugins: [
-    ///...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
-    // new MiniCssExtractPlugin({
-    //   filename: isDevelopment ? '[name].css' : '[name].[hash].css',
-    //   chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
-    // })
-  ],
-  module: {
-    rules: [
-      ///...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
-      // {
-      //   test: /\.module\.s(a|c)ss$/,
-      //   loader: [
-      //     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-      //     {
-      //       loader: 'css-loader',
-      //       options: {
-      //         modules: true,
-      //         sourceMap: isDevelopment
-      //       }
-      //     },
-      //     {
-      //       loader: 'sass-loader',
-      //       options: {
-      //         sourceMap: isDevelopment
-      //       }
-      //     }
-      //   ]
-      // },
-      // {
-      //   test: /\.s(a|c)ss$/,
-      //   exclude: /\.module.(s(a|c)ss)$/,
-      //   loader: [
-      //     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-      //     'css-loader',
-      //     {
-      //       loader: 'sass-loader',
-      //       options: {
-      //         sourceMap: isDevelopment
-      //       }
-      //     }
-      //   ]
-      // }
-      ///...
-    ]
-  },
-  resolve: {
-    // extensions: ['.js', '.jsx'],
-    // extensions: ['.js', '.jsx', '.scss']
-  }
+  // plugins: [
+  //   //...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
+  //   new MiniCssExtractPlugin({
+  //     filename: isDevelopment ? '[name].css' : '[name].[hash].css',
+  //     chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
+  //   })
+  // ],
+  // module: {
+  //   rules: [
+  //     //...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
+  //     {
+  //       test: /\.module\.s(a|c)ss$/,
+  //       loader: [
+  //         isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+  //         {
+  //           loader: 'css-loader',
+  //           options: {
+  //             modules: true,
+  //             sourceMap: isDevelopment
+  //           }
+  //         },
+  //         {
+  //           loader: 'sass-loader',
+  //           options: {
+  //             sourceMap: isDevelopment
+  //           }
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       test: /\.s(a|c)ss$/,
+  //       exclude: /\.module.(s(a|c)ss)$/,
+  //       loader: [
+  //         isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+  //         'css-loader',
+  //         {
+  //           loader: 'sass-loader',
+  //           options: {
+  //             sourceMap: isDevelopment
+  //           }
+  //         }
+  //       ]
+  //     }
+  //     //...
+  //   ]
+  // },
+  // resolve: {
+  //   extensions: ['.js', '.jsx'],
+  //   extensions: ['.js', '.jsx', '.scss']
+  // }
 };
