@@ -9,9 +9,10 @@ npm install @mikezimm/fps-react@1.0.1
 
 # Changelog
 
-## 1.0.1 - 2202-Nov-27
+## 1.0.1 - 2202-Nov-30
 - import npmFunctions/src\Services\Strings_\formating.tsx and src\Services\Strings_\xmlStrings.ts
     added to:
+    "@mikezimm/fps-js": "^1.0.13",
 
 ## 1.0.0 - 2202-Nov-22
 

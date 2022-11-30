@@ -7,7 +7,7 @@ import { Pivot, PivotItem, PivotLinkFormat, PivotLinkSize,} from 'office-ui-fabr
 require('./easypages.css');
 
 // import styles from '../PropPaneCols.module.scss';
-import { WebPartContextCopy152 } from '@mikezimm/fps-js/lib/common/interfaces/WebPartContext@1.15.2'; // Used in:  IEasyPagesSourceProps
+import { WebPartContextCopy_15_2 } from '@mikezimm/fps-js/lib/common/interfaces/@msft/1.15.2/WebPartContext'; // Used in:  IEasyPagesSourceProps
 
 import { easyLinkElement } from './elements';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -36,7 +36,7 @@ export const EasyPageNoFetchTabs: ISourceName[] = [ EasyPagesDevTab, EasyPagesRe
 
 export interface IEasyPagesSourceProps {
 
-  context: WebPartContextCopy152; // WebPartContext;  Set as any for now:  import { WebPartContext } from '@microsoft/sp-webpart-base';
+  context: WebPartContextCopy_15_2; // WebPartContext;  Set as any for now:  import { WebPartContext } from '@microsoft/sp-webpart-base';
   pageLayout: ISupportedHost;  //  SharePointFullPage
 
   pinState: IPinMeState;      // To be used when rebuilding the Banner and FetchBanner components

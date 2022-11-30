@@ -57,9 +57,10 @@ module.exports = {
     //    Or will I have to remember to do it downstream
     // And to get all typings etc in here from @microsoft, fabric-react, do I install it as dependancy in this package?
 
-    "@microsoft/sp-property-pane": "*", 
+    "@microsoft/sp-property-pane": "*",
     "office-ui-fabric-react": "*",  //My actual component import:  import { Slider } from 'office-ui-fabric-react/lib/Slider';
-
+    "@mikezimm/fps-js": "*",
+    "@mikezimm/fps-pnp2": "*",
   },
   devServer: {
     compress: true,
