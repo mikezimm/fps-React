@@ -42,8 +42,8 @@ module.exports = {
       ]
     },
     {
-      test: /\.s[ac]ss$/,
-      // test: /\.css$/,
+      test: /\.css$/,
+      // test: /\.s[ac]ss$/,
       exclude: /node_modules/,
       // loader: ["style-loader", "css-loader", "sass-loader"],
       use: [
@@ -52,7 +52,7 @@ module.exports = {
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
-          "sass-loader",
+          // "sass-loader",
       ]
     },
     {
