@@ -8,7 +8,8 @@ import { IEasyIcons } from './eiTypes'; //, IEasyIconGroup, IEasyIconGroups, Eas
 
 import { getEasyIconElement } from './eiHelpIcons';
 
-require('./easyicons.css');
+import './easyicons.css';
+// require('./easyicons.scss');
 
 export function getEasyIconsHelp ( EasyIcons: IEasyIcons, ): JSX.Element {
 

@@ -9,7 +9,6 @@ const resolveAppPath = relativePath => path.resolve(appDirectory, relativePath);
 // const isDevelopment = process.env.NODE_ENV === 'development';
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-
 module.exports = {
   mode: 'development', // switch to production when you package for production - impacts final size of package you import
   target: 'web',
@@ -43,6 +42,20 @@ module.exports = {
       ]
     },
     {
+      test: /\.s[ac]ss$/,
+      // test: /\.css$/,
+      exclude: /node_modules/,
+      // loader: ["style-loader", "css-loader", "sass-loader"],
+      use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+      ]
+    },
+    {
       test: /\.svg/,
       type: 'asset/resource'
     }]
@@ -71,6 +84,11 @@ module.exports = {
       publicPath: '/',
     },
   },
+
+  // Plugin: [BannerPlugin({
+  //   banner: bannerText
+  // })],
+
   // plugins: [
   //   //...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
   //   new MiniCssExtractPlugin({
@@ -78,7 +96,18 @@ module.exports = {
   //     chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
   //   })
   // ],
+
+
+
   // module: {
+  //   rules: [{
+  //     test: /\.s[ac]ss$/,
+  //     exclude: /node_modules/,
+  //     loader: ["style-loader", "css-loader", "sass-loader" ],
+  //   }],
+
+
+
   //   rules: [
   //     //...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
   //     {
