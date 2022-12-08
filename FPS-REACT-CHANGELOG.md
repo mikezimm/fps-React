@@ -7,6 +7,9 @@ npm publish --access=public
 
 npm install @mikezimm/fps-react@1.0.1
 
+npm install --save-dev mini-css-extract-plugin
+npm install @types/node@14.17.6
+
 # Changelog
 
 ## 1.0.1 - 2202-Nov-27

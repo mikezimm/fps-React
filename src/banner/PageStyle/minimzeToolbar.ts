@@ -1,4 +1,4 @@
-import { DisplayMode } from '@mikezimm/fps-js/lib/common/interfaces/displayMode'
+import { DisplayMode } from '@mikezimm/fps-js/lib/common/interfaces/@msft/1.15.2/displayMode'
 import { IFPSWindowProps, IFPSSectionStyle, IFPSSection } from '../FPSDOM/Interfaces';
 import { createFPSWindowProps } from '../FPSDOM/FPSDocument';
 import { applySectionStyle} from './setAllSectionStyles';

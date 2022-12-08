@@ -7,7 +7,7 @@ import { IPerformanceOp, ILoadPerformance, ILoadPerformanceOps, LoadPerformanceO
 // require('./styles.css'); //Does not work
 // window.require('./styles.css');  //Does not work
 
-// import styles from './PERFORMANCE - RENAME TO JUST styles copy.scss'; //Does not work when following guide
+import styles from './styles.css'; //Does not work when following guide
 
 export function createPerformanceRows( performance: ILoadPerformance, keysToShow: ILoadPerformanceOps[] ) { //[ 'fetch', 'analyze' ]
 

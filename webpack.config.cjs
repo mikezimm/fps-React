@@ -6,9 +6,8 @@ const appDirectory = fs.realpathSync(process.cwd());
 const resolveAppPath = relativePath => path.resolve(appDirectory, relativePath);
 
 //Added per https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
-// const isDevelopment = process.env.NODE_ENV === 'development';
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const isDevelopment = process.env.NODE_ENV === 'development';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development', // switch to production when you package for production - impacts final size of package you import
@@ -25,7 +24,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', '.scss'],
     modules: ['node_modules']
   },
   module: {
@@ -45,7 +44,24 @@ module.exports = {
     {
       test: /\.svg/,
       type: 'asset/resource'
-    }]
+    },
+    {
+      test: /\.css$/i,
+      use: ["style-loader", "css-loader"],
+    },,
+    // {
+    //   test: /\.scss$/,
+    //   use: [
+    //       // Creates `style` nodes from JS strings
+    //       "style-loader",
+    //       // Translates CSS into CommonJS
+    //       "css-loader",
+    //       // Compiles Sass to CSS
+    //       "sass-loader",
+    //   ],
+    // }
+
+  ]
   },
   externals: { // Read webpack documentation - do not want to bundle these into the package
     "react": "React",
@@ -57,9 +73,8 @@ module.exports = {
     //    Or will I have to remember to do it downstream
     // And to get all typings etc in here from @microsoft, fabric-react, do I install it as dependancy in this package?
 
-    "@microsoft/sp-property-pane": "*", 
+    "@microsoft/sp-property-pane": "*",
     "office-ui-fabric-react": "*",  //My actual component import:  import { Slider } from 'office-ui-fabric-react/lib/Slider';
-
   },
   devServer: {
     compress: true,
@@ -72,10 +87,11 @@ module.exports = {
   },
   plugins: [
     ///...  https://www.developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/
-    // new MiniCssExtractPlugin({
-    //   filename: isDevelopment ? '[name].css' : '[name].[hash].css',
-    //   chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
-    // })
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      filename: isDevelopment ? '[name].css' : '[name].[hash].css',
+      chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
+    })
   ],
   module: {
     rules: [
@@ -117,7 +133,8 @@ module.exports = {
     ]
   },
   resolve: {
-    // extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
     // extensions: ['.js', '.jsx', '.scss']
   }
 };
+

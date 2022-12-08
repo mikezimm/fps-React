@@ -1,4 +1,4 @@
-import { DisplayMode } from '@mikezimm/fps-js/lib/common/interfaces/displayMode';
+import { DisplayMode } from '@mikezimm/fps-js/lib/common/interfaces/@msft/1.15.2/displayMode';
 //import { IPerformanceOp, ILoadPerformance, IHistoryPerformance } from '';
 
 export interface IPerformanceOp {
