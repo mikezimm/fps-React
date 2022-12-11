@@ -9,6 +9,7 @@ import { IEasyIcons } from './eiTypes'; //, IEasyIconGroup, IEasyIconGroups, Eas
 import { getEasyIconElement } from './eiHelpIcons';
 
 require('./easyicons.css');
+// import styles from './easyicons.module.scss';
 
 export function getEasyIconsHelp ( EasyIcons: IEasyIcons, ): JSX.Element {
 
